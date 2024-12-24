@@ -1,0 +1,17 @@
+<!-- First way - Custom two-way binding - using decorators: -->
+<!-- 
+<div
+  id="rect"
+  [style.width]="size.width + 'px'"
+  [style.height]="size.height + 'px'"
+  (click)="onReset()"
+></div>
+-->
+
+<!-- Second way - Custom two-way binding - using model: -->
+<div
+  id="rect"
+  [style.width]="size().width + 'px'"
+  [style.height]="size().height + 'px'"
+  (click)="onReset()"
+></div>
